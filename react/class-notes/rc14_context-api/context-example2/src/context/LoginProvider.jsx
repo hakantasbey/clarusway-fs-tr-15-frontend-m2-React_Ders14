@@ -16,7 +16,7 @@ const LoginProvider = ({ children }) => {
     <LoginContext.Provider value={values}>{children}</LoginContext.Provider>
   )
 }
-//? Consuming için bir custom hook yazıyoruz.
+//? Consuming için bir custom hook yazıyoruz. Import sayisini da azaltiyoruz useLoginContext fonksiyonunu kullanarak.
 export const useLoginContext = () => {
   return useContext(LoginContext)
 }
